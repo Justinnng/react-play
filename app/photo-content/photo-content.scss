@@ -1,0 +1,30 @@
+$j-red: #ff6f00;
+.waterfall-wrap{
+  position: relative;
+}
+.photo-wrap{
+  position: absolute;
+  padding-bottom: 10px;
+
+  img{
+    width: 100%;
+  }
+
+  h4{
+    font-weight: 400;
+
+    a{
+      color: #333;
+    }
+
+  }
+
+  p{
+    color: #999999;
+  }
+
+  a.readmore{
+    font-weight: 700;
+    color: $j-red;
+  }
+}

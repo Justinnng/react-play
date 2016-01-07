@@ -1,0 +1,29 @@
+$link-color: #707070;
+$j-red: #ff6f00;
+.navbar .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+  color: $j-red;
+}
+.navbar-customize .navbar-brand{
+  font-size: 42px!important;
+  color: #202020;
+  height: auto!important;
+}
+
+.navbar-customize.navbar{
+
+  .container{
+    padding: 32px 0;
+    border-bottom: 1px solid #707070;
+
+    .navbar-brand{
+      margin-left: 0;
+    }
+
+  }
+  .navbar-nav{
+    @media (min-width: $screen-sm-min){
+      float: right;
+    }
+    font-size: 20px;
+  }
+}

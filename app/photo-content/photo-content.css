@@ -1,0 +1,19 @@
+.waterfall-wrap {
+  position: relative; }
+
+.photo-wrap {
+  position: absolute;
+  padding-bottom: 10px; }
+  .photo-wrap img {
+    width: 100%; }
+  .photo-wrap h4 {
+    font-weight: 400; }
+    .photo-wrap h4 a {
+      color: #333; }
+  .photo-wrap p {
+    color: #999999; }
+  .photo-wrap a.readmore {
+    font-weight: 700;
+    color: #ff6f00; }
+
+/*# sourceMappingURL=photo-content.css.map */
