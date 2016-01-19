@@ -4,6 +4,7 @@ import Hello from './component.jsx';
 import CustomNav from './navbar.jsx';
 import HeadKv from './head-kv/head-kv.jsx';
 import PhotoContent from './photo-content/photo-content.jsx';
+import Footer from './footer/footer.jsx';
 import './custom.scss'
 main();
 
@@ -22,6 +23,7 @@ function main() {
         <HeadKv />
         <CustomNav />
         <PhotoContent />
+        <Footer />
       </div>
     }
   }
@@ -37,7 +39,6 @@ function waterFall(box){
     var hArr = [];
     $boxItem.each(function(index, value) {
       var h=$boxItem.eq(index).outerHeight();
-      console.log(h)
       if(index<cols){
         hArr[index]=h;
         $(value).css({

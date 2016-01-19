@@ -1,5 +1,11 @@
 $link-color: #707070;
 $j-red: #ff6f00;
+$link-hover-color: #ff6f00;
+$link-hover-decoration: none;
+a{
+  transition: all .35s ease-in-out;
+}
+
 .navbar .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
   color: $j-red;
 }

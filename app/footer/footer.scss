@@ -1,0 +1,29 @@
+$icon-color: #333333;
+
+footer{
+  background-color: #f0f2f1;
+  padding: 100px 0 60px;
+  .social-icon{
+    display: inline-block;
+    border-radius: 50%;
+    border:2px solid $icon-color;
+    padding: 5px 8px;
+    margin: 0 3px;
+    color: $icon-color;
+
+    &:hover{
+      color: #fff;
+      background-color: $icon-color;
+    }
+
+    i{
+      display: block;
+      font-size: 14px;
+    }
+
+  }
+
+  p{
+    margin-top: 20px;
+  }
+}

@@ -15,5 +15,7 @@
   .photo-wrap a.readmore {
     font-weight: 700;
     color: #ff6f00; }
+    .photo-wrap a.readmore:hover {
+      color: #333; }
 
 /*# sourceMappingURL=photo-content.css.map */

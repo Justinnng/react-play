@@ -26,5 +26,9 @@ $j-red: #ff6f00;
   a.readmore{
     font-weight: 700;
     color: $j-red;
+
+    &:hover{
+      color: #333;
+    }
   }
 }
