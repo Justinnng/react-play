@@ -1,4 +1,4 @@
-import './head-kv.scss'
+import '../scss/components/_head-kv.scss'
 import React from 'react';
 
 export default class HeadKv extends React.Component {

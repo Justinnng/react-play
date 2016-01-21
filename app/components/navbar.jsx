@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 export default class CustomNav extends React.Component {
   render() {
@@ -18,8 +19,12 @@ export default class CustomNav extends React.Component {
 
         <div className="navbar-collapse collapse" id="bs-example-navbar-collapse-9" aria-expanded="false" style={{height: 1 +'px'}}>
           <ul className="nav navbar-nav">
-            <li className="active"><a href="#">Home</a></li>
-            <li><a href="#">Link</a></li>
+            <li className="active">
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
             <li><a href="#">Link</a></li>
           </ul>
         </div>

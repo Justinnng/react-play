@@ -1,11 +1,10 @@
-import './photo-content.scss'
+import './../scss/components/_photo-content.scss'
 import React from 'react';
 
 export default class PhotoContent extends React.Component {
 
   render() {
-    return <div className="container">
-      <div className="row waterfall-wrap">
+    return <div className="row waterfall-wrap">
         <div className="col-xs-12 col-sm-6 col-md-4 photo-wrap">
           <img src={require("../images/blog_01.jpg")} />
           <div className="col-xs-12">
@@ -85,7 +84,6 @@ export default class PhotoContent extends React.Component {
             <a href="#" className="readmore"> > Read More</a>
           </div>
         </div>
-      </div>
     </div>;
   }
 }

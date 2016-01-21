@@ -1,22 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hello from './component.jsx';
-import CustomNav from './navbar.jsx';
-import HeadKv from './head-kv/head-kv.jsx';
-import PhotoContent from './photo-content/photo-content.jsx';
-import Footer from './footer/footer.jsx';
-import './custom.scss'
-main();
+import { Router, browserHistory } from 'react-router'
+import routes from './routes.jsx';
 
-window.onload = function(){
-  waterFall($('.waterfall-wrap'));
-};
+ReactDOM.render((
+  <Router history={browserHistory}>
+    {routes}
+  </Router>
+), document.getElementById('blog'));
 
 
+/*function main() {
 
 
-
-function main() {
   class AppComponent extends React.Component{
     render(){
       return <div>
@@ -28,7 +24,14 @@ function main() {
     }
   }
   ReactDOM.render(<AppComponent />, document.getElementById('blog'));
-}
+}*/
+
+
+window.onload = function(){
+  waterFall($('.waterfall-wrap'));
+};
+
+
 
 function waterFall(box){
   if(box){

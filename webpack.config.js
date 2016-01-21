@@ -3,9 +3,9 @@ var webpack = require("webpack");
 var config = {
   entry: [
     'webpack/hot/dev-server',
-    'webpack-dev-server/client?http://localhost:8080',
+    'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
     "bootstrap-sass!./bootstrap-sass.config.js",
-    path.resolve(__dirname, 'app/main.js')
+    path.resolve(__dirname, 'app/main.jsx')
   ],
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -17,6 +17,7 @@ var config = {
       jQuery: "jquery"
     })
   ],
+  devtool: "source-map",
   module: {
     loaders: [{
       test: /\.jsx?$/, // 用正则来匹配文件路径，这段意思是匹配 js 或者 jsx
@@ -28,7 +29,7 @@ var config = {
         }
     }, {
       test: /\.scss$/,
-      loader: 'style!css!sass'
+      loader: 'style!css!sass?sourceMap'
     }, {
       test: /\.(png|jpg)$/,
       loader: 'url?limit=25000'
@@ -39,7 +40,13 @@ var config = {
       { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&mimetype=application/octet-stream" },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: "file" },
       { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&mimetype=images/svg+xml" }]
-  }
+  },
+  plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ]
+
 };
 
 module.exports = config;

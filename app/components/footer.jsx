@@ -1,4 +1,4 @@
-import './footer.scss'
+import './../scss/components/_footer.scss'
 import React from 'react';
 
 export default class Footer extends React.Component {
