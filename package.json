@@ -27,7 +27,7 @@
     "history": "^1.17.0",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "react-router": "^1.0.3",
+    "react-router": "^2.0.0",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-dev-server": "^1.14.0",
     "webpack-hot-middleware": "^2.6.0"
