@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom';
 import { Router, browserHistory } from 'react-router'
 import routes from './routes.jsx';
 
+import createBrowserHistory from 'history/lib/createBrowserHistory';
+const history = createBrowserHistory();
+
 ReactDOM.render((
-  <Router history={browserHistory}>
+  <Router history={history}>
     {routes}
   </Router>
 ), document.getElementById('blog'));
@@ -13,18 +16,18 @@ ReactDOM.render((
 /*function main() {
 
 
-  class AppComponent extends React.Component{
-    render(){
-      return <div>
-        <HeadKv />
-        <CustomNav />
-        <PhotoContent />
-        <Footer />
-      </div>
-    }
-  }
-  ReactDOM.render(<AppComponent />, document.getElementById('blog'));
-}*/
+ class AppComponent extends React.Component{
+ render(){
+ return <div>
+ <HeadKv />
+ <CustomNav />
+ <PhotoContent />
+ <Footer />
+ </div>
+ }
+ }
+ ReactDOM.render(<AppComponent />, document.getElementById('blog'));
+ }*/
 
 
 window.onload = function(){
